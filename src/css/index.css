@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.photo{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    width: 100%;
+    height: 350px;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background: #032e52;
+    background: linear-gradient(180deg, #133756, transparent);
+    justify-content: space-between;
+}
+
+.ska{
+    width: 180px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: -40px;
+}
+
+.recarregar{
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: -40px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.recarregar:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white, 0 0 50px white,
+    0 0 100px white, 0 0 200px white;
+}
+
+.centralize{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon{
+    width: 400px;
+    height: 200px;
+    margin-right: 70px;
+    margin-top: -70px;
+}
+
+.faixaB{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: white;
+    background: linear-gradient(to top, white, transparent);
+    margin-top: -50px;
+}
+
+.trocaDeBase{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    letter-spacing: 5px;
+}
+
+.text{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    position: relative;
+    width: 780px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    border: 6px solid #03165f;
+    border-radius: 8px;
+}
+
+.solucoes{
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    display: grid;
+    justify-items: center;
+}
+
+.segmento{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.alphacam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 250px;
+    background:  rgb(0, 162, 255);
+    font-size: 42px;
+    color: black;
+    cursor:pointer;
+    transition: .15s;
+}
+
+.alphacam:hover{
+    color: white;
+    font-size: 60px;
+}
+
+.gradient1{
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(251, 255, 0, 0), rgba(0, 162, 255, 0.826), rgb(0, 162, 255));
+    margin-right: 40%;
+    z-index: 5;
+}
+
+.edgecam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 250px;
+    background:  rgb(0, 255, 72);
+    font-size: 42px;
+    color: black;
+    cursor:pointer;
+    transition: .15s;
+}
+
+.edgecam:hover{
+    color: white;
+    font-size: 60px;
+}
+
+.gradient2{
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(251, 255, 0, 0), rgba(0, 255, 72, 0.711), rgb(0, 255, 72));
+    margin-right: 40%;
+    z-index: 5;
+}
+
+.worknc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 250px;
+    background: rgb(160, 151, 151);
+    font-size: 42px;
+    color: black;
+    cursor:pointer;
+    transition: .15s;
+}
+
+.worknc:hover{
+    color: white;
+    font-size: 60px;
+}
+
+.gradient3{
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(251, 255, 0, 0), rgba(160, 151, 151, 0.826), rgb(160, 151, 151));
+    margin-right: 40%;
+    z-index: 5;
+}
+
+
+.usinagem{
+    width: 55%;
+    height: 250px;
+}
+
+.time{
+    height: 90px;
+    font-family: "Bebas Neue", sans-serif;
+    width: 850px;
+    margin: 50px;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    border: 6px solid #03165f;
+    border-radius: 8px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#text{
+    height: 20px;
+    font-size: 3rem;
+    color: black;
+    margin-top: -45px;
+}
+
+#text::after{
+    content: "";
+    width: 3px;
+    height: 50px;
+    display: inline-block;
+    background-color: #03165f;
+    animation: flasher 0.7s infinite linear;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+@keyframes flasher{
+    from{
+        opacity: 0;
+    }
+}
+
+footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 310px;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #032e52;
+}
+
+.footer-fundo{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: -40px;
+}
+
+.industria4{
+    font-family: "Bebas Neue", sans-serif;
+    width: 50%;
+    height: 140px;
+    background-color: rgb(10, 100, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+.logo4{
+    width: 130px;
+    height: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 100, 235);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}

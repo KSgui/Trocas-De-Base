@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+.fresadoraCnc{
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    position: absolute;
+}
+
+.linha1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #032e52;
+    background: linear-gradient(180deg, #133756, transparent);
+    position: fixed;
+    z-index: 4;
+    transition: background-color 0.5s ease;
+}
+
+.azul-forte{
+    background: #032e52;
+}
+
+.ska{
+    width: 150px;
+    height: 50px;
+}
+
+.tittle{
+    font-size: 70px;
+}
+
+.sem-marcacao{
+    color: white;
+}
+
+.home{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.home:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white, 0 0 50px white,
+    0 0 100px white, 0 0 200px white;
+}
+
+.quebra-galho{
+    width: 100%;
+    height: 340px;
+}
+
+.linha2{
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 10px; */
+    row-gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+button{
+    width: 55%;
+    height: 100px;
+    /* margin-left: 20px; */
+    font-size: 25px;
+    background-color: #032e52;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+button:hover{
+    background-color: rgb(10, 100, 235);
+    color: white;
+    scale: 1.1;
+}
+
+.botoes.selecionado{
+    transform: scale(1.1);
+    background-color: rgb(10, 100, 235);
+    scale: 1;
+}
+
+.faixab{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: white;
+    background: linear-gradient(to top, white, transparent);
+    margin-top: 30px;
+}
+
+.contra{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contra.selecionado{
+    display: flex;
+}
+
+.sobre-ele{
+    width: 90%;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+/*   ⬇️⬇️⬇️⬇️⬇️⬇️ class do logo da concorrencia  */
+.hypermill{
+    width: 390px;
+    margin-top: -380px;
+    position: absolute;
+}
+
+.powermill{
+    width: 390px;
+    margin-top: -345px;
+    position: absolute;
+}
+
+.cimatron{
+    width: 390px;
+    margin-top: -380px;
+    position: absolute;
+}
+
+.topSolid{
+    width: 390px;
+    margin-top: -380px;
+    position: absolute;
+}
+
+.tebis{
+    width: 200px;
+    height: auto;
+    margin-top: -290px;
+    position: absolute;
+    /* border-radius: 10px; */
+}
+
+.nxCam{
+    width: 390px;
+    margin-top: -380px;
+    position: absolute;
+}
+/*   ⬇️⬇️⬇️⬇️⬇️⬇️ class pai dos pontos fracosEfortes  */
+.pontosff{
+    width: 400px;
+    height: 290px;
+    background-color: #032e52;
+    margin-top: 90px;
+    border-radius: 20px;
+    font-size: 35px;
+    text-align: center;
+    flex-direction: column;
+    border: 6px solid #032e52;
+    color: white;
+    z-index: 2;
+}
+
+.pontosT{
+    width: 400px;
+    height: 290px;
+    background-color: #032e52;
+    margin-top: 270px;
+    border-radius: 20px;
+    font-size: 35px;
+    text-align: center;
+    flex-direction: column;
+    border: 6px solid #032e52;
+    color: white;
+    z-index: 2;
+}
+/* ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️ class pai dos pontos fracosEfortes*/
+
+.edicao{
+    scale: 1.1;
+}
+
+.pfracos{
+    width: 100%;
+    height: 246px;
+    background-color: grey;
+    font-size: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.pfortes{
+    width: 100%;
+    height: 246px;
+    background-color: grey;
+    font-size: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+li{
+    flex-direction: column;
+    margin-top: 10px;
+    list-style-type: none;
+    border-bottom: black solid 2px;
+}
+
+.faixa-azul{
+    margin-top: -20px;
+    background-color: #032e52;
+    width: 94%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.faixa-azulForte{
+    margin-top: 100px;
+    background-color: #032e52;
+    width: 94%;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.trocas-de-base{
+    font-size: 60px;
+}
+
+.paragrafo{
+    font-size: 30px;
+}
+
+.concorrenteSelecionado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.versus{
+    width: 800px;
+    height: 250px;
+}
+
+/*   ⬇️⬇️⬇️⬇️⬇️⬇️ Div pai das informações da troca debase  */
+.informacoes{
+    margin-top: 10px;
+    width: 50%;    /* 80%  */
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.informacoes2{
+    margin-top: 10px;
+    width: 50%;   /* 80%  */
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.9s, opacity 0.5s;
+}
+
+/*   ⬇️⬇️⬇️⬇️⬇️⬇️ CASES  */
+.provincia{
+    width: 30%;
+    height: 80%;
+    border-radius: 40px;
+    padding: 20px;
+    margin-left: 10px;
+}
+/* ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️ CASES*/
+
+.importante{
+    width: 65%;
+    height: 100%;
+    padding-left: 30px;
+    font-size: 25px;
+    flex-direction: column;
+    row-gap: 30px;
+    border-radius: 50px;
+}
+
+.cnpj-nome{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.cnpj-nome:hover{
+    border-bottom: 4px solid white;
+}
+
+.funcao{
+    background-color: white;
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dores{
+    background-color: white;
+    width: 90%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.beneficios{
+    background-color: white;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 310px;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #032e52;
+}
+
+.footer-fundo{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: -40px;
+}
+
+.industria4{
+    font-family: "Bebas Neue", sans-serif;
+    width: 50%;
+    height: 140px;
+    background-color: rgb(10, 100, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 30px;
+}
+
+.logo4{
+    width: 130px;
+    height: 50px;
+}
+
+/* ALTERAÇÃO DO SCROLL */
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(10, 100, 235);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
